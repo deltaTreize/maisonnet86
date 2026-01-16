@@ -44,7 +44,7 @@ export default function Home() {
 					Voir tous mes services
 				</Link>
 			</section>
-			<section>
+			<section className={styles.section}>
 				<h2 className={styles.h2}>⭐Pourquoi choisir MaisonNet86</h2>
 				<ul className={styles.ul}>
 					<li className={styles.li}>
@@ -64,7 +64,7 @@ export default function Home() {
 					</li>
 				</ul>
 			</section>
-			<section>
+			<section className={styles.section}>
 				<h2 className={styles.h2}>📅 Comment ça fonctionne ?</h2>
 				<ul className={styles.ul}>
 					<li className={styles.li}>
@@ -82,9 +82,10 @@ export default function Home() {
 					</li>
 				</ul>
 			</section>
-			<section>
+			<section className={styles.sectionImg}>
 				<h2 className={styles.h2}>📍Mon secteur d’intervention</h2>
 				<Image
+					className={styles.img}
 					src="/pictures/zone-intervention-maisonnet86.png"
 					alt="Zone d’intervention MaisonNet86 – ménage à domicile dans la Vienne (86)"
 					width={500}

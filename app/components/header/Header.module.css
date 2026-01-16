@@ -41,3 +41,16 @@
     text-decoration: none;
     text-align: center;
   }
+
+  @media (min-width: 769px) {
+    .nav {
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+      height: 70%;
+      width: 60%;
+    }
+    .link, .cta {
+      width: 30%;
+    }
+  }

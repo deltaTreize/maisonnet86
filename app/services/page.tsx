@@ -9,10 +9,10 @@ export const metadata = {
 
 export default function Services() {
 	return (
-		<div>
+		<div className={styles.container}>
 			<h1 className={styles.h1}>🧹Mes Services</h1>
 			<section
-				className="section"
+				className={styles.section}
 			>
 				<ul className={styles.ul}>
 					<li className={styles.li}>
