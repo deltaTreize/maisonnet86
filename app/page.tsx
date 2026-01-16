@@ -1,65 +1,109 @@
 import Image from "next/image";
+import Link from "next/link";
+import styles from "./page.module.css";
+
+export const metadata = {
+	title: "MaisonNet86 – Ménage & vitres à domicile",
+	description: "Service de ménage à domicile dans la Vienne (86)...",
+};
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+	return (
+		<div className={styles.home}>
+			<h1 className={styles.h1}>
+				Bienvenue chez<br></br> MaisonNet86
+			</h1>
+			<p className={styles.p}>
+				Votre service de ménage et vitres à domicile dans la Vienne (86).
+			</p>
+			<p className={styles.p}>
+				MaisonNet86, c’est avant tout une micro-entreprise locale, créée pour
+				proposer un service de ménage de qualité, humain et de confiance.
+				<br></br>
+				<br></br>
+				Auto-entrepreneur, j’interviens moi-même à votre domicile pour
+				l’entretien de votre maison, de vos vitres ou de vos locaux, avec
+				sérieux et discrétion.<br></br> En faisant appel à MaisonNet86, vous
+				avez la garantie d’un interlocuteur unique, à l’écoute de vos besoins,
+				et d’un travail soigné, réalisé avec respect de votre intérieur.
+			</p>
+			<section className={styles.section}>
+				<h2 className={styles.h2}>🧹Mes Services</h2>
+				<ul className={styles.ul}>
+					<li className={styles.li}>Devis gratuit et personnalisé</li>
+					<li className={styles.li}>Entretien régulier ou ponctuel</li>
+					<li className={styles.li}>
+						Grand ménage (état des lieux, printemps, déménagement)
+					</li>
+					<li className={styles.li}>Nettoyage de vitres</li>
+					<li className={styles.li}>
+						Ménage pour professionnels (bureaux, locaux)
+					</li>
+				</ul>
+				<Link href="/services" className={styles.cta}>
+					Voir tous mes services
+				</Link>
+			</section>
+			<section>
+				<h2 className={styles.h2}>⭐Pourquoi choisir MaisonNet86</h2>
+				<ul className={styles.ul}>
+					<li className={styles.li}>
+						Micro-entreprise locale dans la Vienne (86)
+					</li>
+					<li className={styles.li}>Un seul interlocuteur</li>
+					<li className={styles.li}>Prestations personnalisées</li>
+					<li className={styles.li}>
+						Travail soigné et respect de votre intérieur
+					</li>
+					<li className={styles.li}>
+						Entreprise déclarée Services à la Personne (SAP)
+					</li>
+					<li className={styles.li}>
+						Vous bénéficiez du crédit d’impôt de 50 %,<br></br> comme avec les
+						grandes sociétés
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 className={styles.h2}>📅 Comment ça fonctionne ?</h2>
+				<ul className={styles.ul}>
+					<li className={styles.li}>
+						Demande de devis gratuit et sans engagement
+					</li>
+					<li className={styles.li}>
+						Échange / Visite pour comprendre vos besoins (surface, fréquence,
+						prestations)
+					</li>
+					<li className={styles.li}>
+						Planification de l’intervention selon vos disponibilités
+					</li>
+					<li className={styles.li}>
+						Intervention réalisée puis paiement sur facture
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2 className={styles.h2}>📍Mon secteur d’intervention</h2>
+				<Image
+					src="/pictures/zone-intervention-maisonnet86.png"
+					alt="Zone d’intervention MaisonNet86 – ménage à domicile dans la Vienne (86)"
+					width={500}
+					height={300}
+				/>
+				<p className={styles.p}>
+					Pour toute demande hors zone, n’hésitez pas à me contacter, certaines
+					interventions ponctuelles peuvent être possibles selon disponibilité.
+				</p>
+			</section>
+			<section className={styles.section}>
+				<h2 className={styles.h2}>📞 Contactez-moi 📧</h2>
+				<a href="tel:0658373468" className={styles.cta}>
+					📞 Téléphone
+				</a>
+				<a href="mailto:ludo.leblond13@gmail.com" className={styles.cta}>
+					📧 Email
+				</a>
+			</section>
+		</div>
+	);
 }

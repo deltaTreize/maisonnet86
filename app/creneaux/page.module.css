@@ -1,0 +1,81 @@
+/* page.module.css */
+.container {
+	padding: 1rem;
+}
+.title {
+	color: var(--bleu);
+	margin-bottom: 1rem;
+}
+
+.h1{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: var(--bleu);
+}
+.description {
+  color: var(--grisfonce);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Calendrier mobile-first : chaque ligne contient 2 jours */
+.calendar {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 2 jours côte à côte */
+	gap: 1rem;
+  padding: 0 5px;
+}
+
+/* Jour entier */
+.dayColumn {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	overflow: hidden;
+	padding: 0.25rem;
+}
+
+/* Header du jour */
+.dayHeader {
+	background-color: var(--grisclair);
+	padding: 0.5rem;
+	text-align: center;
+	font-weight: bold;
+  color: var(--bleu);
+}
+
+/* Container des créneaux : 2 colonnes par jour */
+.slotsContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+	gap: 0.25rem;
+}
+
+/* Cellule de créneau */
+.slot {
+	padding: 0.4rem;
+	text-align: center;
+	font-size: 0.8rem;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+
+.free {
+	background-color: #c8f7c5;
+	cursor: pointer;
+}
+.busy {
+	background-color: #f7c5c5;
+	color: #555;
+	cursor: not-allowed;
+}
+
+/* Tablet / desktop : 2 jours par ligne */
+@media (min-width: 600px) {
+	.calendar {
+		gap: 1rem;
+	}
+}
