@@ -3,8 +3,29 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = {
-	title: "MaisonNet86 – Ménage & vitres à domicile",
-	description: "Service de ménage à domicile dans la Vienne (86)...",
+  title: "MaisonNet86 – Ménage & vitres à domicile",
+  description: "Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
+  openGraph: {
+    title: "MaisonNet86 – Ménage & vitres à domicile",
+    description: "Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
+    url: "https://maisonnet86.vercel.app/",
+    siteName: "MaisonNet86",
+    images: [
+      {
+        url: "/logo/maisonnet86-logo.webp",
+        width: 1200,
+        height: 630,
+        alt: "Logo MaisonNet86",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MaisonNet86 – Ménage & vitres à domicile",
+    description: "Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
+    images: ["/logo/maisonnet86-logo.webp"],
+  },
 };
 
 export default function Home() {
