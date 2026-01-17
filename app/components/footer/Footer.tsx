@@ -13,21 +13,12 @@ export default function Footer() {
 			</div>
 			<div style={{ margin: "10px 0" }}>
 				<a
-					href="https://www.facebook.com/tonprofil"
+					href="https://www.facebook.com/profile.php?id=61586586756869"
 					target="_blank"
 					rel="noopener noreferrer"
 					className={styles.link}
 				>
 					Facebook
-				</a>
-				|
-				<a
-					href="https://www.instagram.com/tonprofil"
-					target="_blank"
-					rel="noopener noreferrer"
-					className={styles.link}
-				>
-					Instagram
 				</a>
 			</div>
 			<p>🔹 SIRET : 123 456 789 00012</p>
