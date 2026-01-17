@@ -29,7 +29,12 @@ export default function ContactForm() {
 		const dataWithTime = { ...formData, time: new Date().toLocaleString() };
 
 		emailjs
-			.send("service_yxodmkr", "maisonNet86", dataWithTime, "fI8VIVuoaDx0ur5ap")
+			.send(
+				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+				dataWithTime,
+				process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+			)
 			.then(() => {
 				setSent(true);
 				setFormData({
@@ -50,17 +55,20 @@ export default function ContactForm() {
 	};
 	return (
 		<section className={styles.container}>
-<h1 className={styles.h1}>📧 Pour me contacter</h1>
-<p className={styles.description}>
-  Vous pouvez m&apos;envoyer votre demande directement via ce formulaire.
-</p>
-<p className={styles.description}>
-  Merci de préciser votre code postal pour vérifier que j&apos;interviens bien dans votre secteur.  
-  N’hésitez pas à indiquer la surface et le nombre de pièces pour que je puisse préparer un devis rapide et précis.
-</p>
-<p className={styles.description}>
-  Si possible, une visite de la maison est recommandée : elle me permet d’évaluer plus précisément le temps, le matériel et les prestations nécessaires.
-</p>
+			<h1 className={styles.h1}>📧 Pour me contacter</h1>
+			<p className={styles.description}>
+				Vous pouvez m&apos;envoyer votre demande directement via ce formulaire.
+			</p>
+			<p className={styles.description}>
+				Merci de préciser votre code postal pour vérifier que j&apos;interviens
+				bien dans votre secteur. N’hésitez pas à indiquer la surface et le
+				nombre de pièces pour que je puisse préparer un devis rapide et précis.
+			</p>
+			<p className={styles.description}>
+				Si possible, une visite de la maison est recommandée : elle me permet
+				d’évaluer plus précisément le temps, le matériel et les prestations
+				nécessaires.
+			</p>
 
 			<form className={styles.contactForm} onSubmit={handleSubmit}>
 				<input
