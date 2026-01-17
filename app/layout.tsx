@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Analytics from "./components/analytics/Analytics";
 import "./globals.css";
+import Head from "next/head";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -30,6 +31,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="fr">
+			<Head>
+				<link rel="preload" href="/styles/page.module.css" as="style" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link
+					rel="preconnect"
+					href="https://fonts.gstatic.com"
+					crossOrigin="anonymous"
+				/>
+			</Head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>

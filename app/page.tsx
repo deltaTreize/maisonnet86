@@ -83,10 +83,10 @@ export default function Home() {
 						Vous bénéficiez du crédit d’impôt de 50 %,<br></br> comme avec les
 						grandes sociétés
 					</li>
+				</ul>
 					<Link href="/impot" className={styles.cta}>
 						En savoir plus sur la réduction d&apos;impôt
 					</Link>
-				</ul>
 			</section>
 			<section className={styles.section}>
 				<h2 className={styles.h2}>📅 Comment ça fonctionne ?</h2>
