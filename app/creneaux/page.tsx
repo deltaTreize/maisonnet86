@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 type Slot = Record<string, string>;
 
@@ -44,7 +45,7 @@ export default function CreneauxPage() {
 	if (!schedule.length) return <p>Chargement...</p>;
 
 	return (
-		<section>
+		<section className={styles.container}>
 			<h1 className={styles.h1}>📅 Horaires</h1>
 			<p className={styles.description}>
 				Ce planning vous montre mes créneaux disponibles sur une semaine type.
@@ -75,6 +76,9 @@ export default function CreneauxPage() {
 					</div>
 				))}
 			</div>
+			<Link href="/contact" className={styles.cta}>
+				Me contacter
+			</Link>
 		</section>
 	);
 }

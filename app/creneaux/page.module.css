@@ -1,6 +1,9 @@
 /* page.module.css */
 .container {
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .title {
 	color: var(--bleu);
@@ -28,6 +31,8 @@
 	grid-template-columns: repeat(2, 1fr); /* 2 jours côte à côte */
 	gap: 1rem;
   padding: 0 5px;
+	margin-bottom: 30px;
+	width: 100%;
 }
 
 /* Jour entier */
@@ -57,8 +62,9 @@
 /* Cellule de créneau */
 .slot {
 	padding: 0.4rem;
-	text-align: center;
-	font-size: 0.8rem;
+	padding-left: 1rem;
+	text-align: left;
+	font-size: 14px;
 	border: 1px solid #eee;
 	border-radius: 4px;
 }
@@ -72,10 +78,73 @@
 	color: #555;
 	cursor: not-allowed;
 }
+.cta {
+	background-color: var(--bleu);
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	text-decoration: none;
+	text-align: center;
+	margin: 30px 0;
+	width: 50%;
+	max-width: 400px;
+}
 
-/* Tablet / desktop : 2 jours par ligne */
+
 @media (min-width: 600px) {
 	.calendar {
 		gap: 1rem;
+	}
+	.slot{
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.h1 {
+    font-size: 40px;
+	}
+
+	.description {
+		font-size: 18px;
+	}
+
+	.calendar {
+		grid-template-columns: repeat(3, 1fr); /* 3 jours par ligne */
+		gap: 1.25rem;
+	}
+
+	.slot {
+		font-size: 0.85rem;
+		padding: 0.45rem;
+	}
+	.cta{
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1200px;
+	}
+
+	.calendar {
+		/* grid-template-columns: repeat(4, 1fr);  */
+		/* max-width: 70%; */
+		gap: 1.5rem;
+	}
+
+	.dayHeader {
+		font-size: 1.2rem;
+	}
+
+	.slot {
+		font-size: 0.9rem;
+		padding: 0.5rem;
 	}
 }
