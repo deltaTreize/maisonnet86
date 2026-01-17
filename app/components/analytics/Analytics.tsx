@@ -8,7 +8,7 @@ export default function Analytics() {
     // Inject script gtag.js
     const script = document.createElement("script");
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-137ZL1PQDP`;
     document.head.appendChild(script);
 
     // Inline config
@@ -17,7 +17,7 @@ export default function Analytics() {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '${measurementId}', { page_path: window.location.pathname });
+      gtag('config', 'G-137ZL1PQDP', { page_path: window.location.pathname });
     `;
     document.head.appendChild(inlineScript);
 
