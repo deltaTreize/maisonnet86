@@ -18,10 +18,10 @@ export default function Footer() {
 					rel="noopener noreferrer"
 					className={styles.link}
 				>
-					Facebook
+					| Facebook |
 				</a>
 			</div>
-			<p>🔹 SIRET : 123 456 789 00012</p>
+			<p>🔹 SIRET : 812 355 808 00047</p>
 		</footer>
 	);
 }
