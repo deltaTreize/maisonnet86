@@ -3,12 +3,12 @@ import styles from "./page.module.css";
 
 
 export const metadata = {
-  title: "MaisonNet86 – Nos services de ménage & vitres",
+  title: "MaisonNet86 – Ménage & vitres à domicile dans la Vienne (86) - Nos services",
   description: "Découvrez nos prestations : ménage, vitres, entretien régulier ou ponctuel.",
   openGraph: {
     title: "MaisonNet86 – Nos services",
     description: "Prestations de ménage et vitres à domicile dans la Vienne (86).",
-    url: "https://maisonnet86.vercel.app/services",
+    url: "https://maisonnet86.fr/services",
     siteName: "MaisonNet86",
     images: [
       {

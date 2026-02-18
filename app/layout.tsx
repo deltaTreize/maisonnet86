@@ -17,8 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "MaisonNet86 – Ménage & vitres à domicile",
+	title: "MaisonNet86 – Ménage & vitres à domicile dans la Vienne (86)",
 	description: "Service de ménage à domicile dans la Vienne (86)...",
+	metadataBase: new URL("https://maisonnet86.fr"),
 	icons: {
 		icon: "/logo/maisonnet86-favicon.webp",
 	},
@@ -43,6 +44,27 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "LocalBusiness",
+							name: "MaisonNet86",
+							image: "https://maisonnet86.fr/logo/maisonnet86-logo.webp",
+							url: "https://maisonnet86.fr",
+							telephone: "0658373468",
+							address: {
+								"@type": "PostalAddress",
+								streetAddress: "170 rue des Mésanges",
+								addressLocality: "Dissay",
+								postalCode: "86130",
+								addressCountry: "FR",
+							},
+							areaServed: "Vienne (86)",
+						}),
+					}}
+				/>
 				<Analytics />
 				<Header />
 				<main id="main-content">{children}</main>

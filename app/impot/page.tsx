@@ -2,18 +2,18 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "MaisonNet86 – Réduction d'impôt 50%",
+  title: "MaisonNet86 – Ménage & vitres à domicile dans la Vienne (86) – Réduction d'impôt 50%",
   description:
     "Découvrez comment bénéficier de la réduction d'impôt de 50% sur les prestations de ménage et vitres à domicile avec MaisonNet86 dans la Vienne (86).",
   openGraph: {
-    title: "MaisonNet86 – Réduction d'impôt 50%",
+    title: "MaisonNet86 – Ménage & vitres à domicile dans la Vienne (86) – Réduction d'impôt 50%",
     description:
       "Profitez de 50% de réduction d'impôt sur vos prestations de ménage et vitres à domicile.",
-    url: "https://maisonnet86.vercel.app/impot",
+    url: "https://maisonnet86.fr/impot",
     siteName: "MaisonNet86",
     images: [
       {
-        url: "/logo/maisonnet86-logo.webp",
+        url: "https://maisonnet86.fr/logo/maisonnet86-logo.webp",
         width: 1200,
         height: 630,
         alt: "MaisonNet86 Logo",
@@ -27,7 +27,7 @@ export const metadata = {
     title: "MaisonNet86 – Réduction d'impôt 50%",
     description:
       "Profitez de 50% de réduction d'impôt sur vos prestations de ménage et vitres à domicile.",
-    images: ["/logo/maisonnet86-logo.webp"],
+    images: ["https://maisonnet86.fr/logo/maisonnet86-logo.webp"],
   },
 };
 
