@@ -6,8 +6,20 @@
 }
 
 /* Titres */
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SAP {
+	margin-left: 5px;
+	width: 60px;
+}
+
 .h1 {
-	font-size: 1.5rem;
+	font-size: 1.1rem;
 	text-align: center;
 	color: var(--bleu);
 	font-weight: bold;
@@ -61,6 +73,12 @@
 		max-width: 900px;
 		margin: 0 auto;
 		padding: 2rem;
+	}
+
+	.SAP {
+		margin-left: 20px;
+		width: 100px;
+		height: 100px;
 	}
 
 	.h1,

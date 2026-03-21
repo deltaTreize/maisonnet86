@@ -3,29 +3,32 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "MaisonNet86 – Ménage & vitres à domicile dans la Vienne (86)",
-  description: "Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
-  openGraph: {
-    title: "MaisonNet86 – Ménage & vitres à domicile",
-    description: "Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
-    url: "https://maisonnet86.fr",
-    siteName: "MaisonNet86",
-    images: [
-      {
-        url: "/logo/maisonnet86-logo.webp",
-        width: 1200,
-        height: 630,
-        alt: "Logo MaisonNet86",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "MaisonNet86 – Ménage & vitres à domicile",
-    description: "Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
-    images: ["/logo/maisonnet86-logo.webp"],
-  },
+	title: "MaisonNet86 – Ménage & vitres à domicile dans la Vienne (86)",
+	description:
+		"Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
+	openGraph: {
+		title: "MaisonNet86 – Ménage & vitres à domicile",
+		description:
+			"Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
+		url: "https://maisonnet86.fr",
+		siteName: "MaisonNet86",
+		images: [
+			{
+				url: "/logo/maisonnet86-logo.webp",
+				width: 1200,
+				height: 630,
+				alt: "Logo MaisonNet86",
+			},
+		],
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "MaisonNet86 – Ménage & vitres à domicile",
+		description:
+			"Service de ménage à domicile dans la Vienne (86). Devis rapide et prestations personnalisées.",
+		images: ["/logo/maisonnet86-logo.webp"],
+	},
 };
 
 export default function Home() {
@@ -83,10 +86,18 @@ export default function Home() {
 						Vous bénéficiez du crédit d’impôt de 50 %,<br></br> comme avec les
 						grandes sociétés
 					</li>
+					<li className={styles.logo}>
+						<Image
+							src="/logo/SAP.webp"
+							alt="logo SAP"
+							width={100}
+							height={100}
+						></Image>
+					</li>
 				</ul>
-					<Link href="/impot" className={styles.cta}>
-						En savoir plus sur la réduction d&apos;impôt
-					</Link>
+				<Link href="/impot" className={styles.cta}>
+					En savoir plus sur la réduction d&apos;impôt
+				</Link>
 			</section>
 			<section className={styles.section}>
 				<h2 className={styles.h2}>📅 Comment ça fonctionne ?</h2>

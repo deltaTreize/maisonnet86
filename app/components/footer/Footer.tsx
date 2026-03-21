@@ -21,7 +21,8 @@ export default function Footer() {
 					| Facebook |
 				</a>
 			</div>
-			<p>🔹 SIRET : 812 355 808 00047</p>
+			<p>🔹 SIRET: 812 355 808 00039</p>
+			<p>🔹 SAP N°: 812355808</p>
 		</footer>
 	);
 }
