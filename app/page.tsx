@@ -46,7 +46,7 @@ export default function Home() {
 				<br></br>
 				<br></br>
 				Auto-entrepreneur, j’interviens moi-même à votre domicile pour
-				l’entretien de votre maison, de vos vitres ou de vos locaux, avec
+				l’entretien de votre maison et de vos vitres, avec
 				sérieux et discrétion.<br></br> En faisant appel à MaisonNet86, vous
 				avez la garantie d’un interlocuteur unique, à l’écoute de vos besoins,
 				et d’un travail soigné, réalisé avec respect de votre intérieur.
@@ -57,11 +57,20 @@ export default function Home() {
 					<li className={styles.li}>Devis gratuit et personnalisé</li>
 					<li className={styles.li}>Entretien régulier ou ponctuel</li>
 					<li className={styles.li}>
-						Grand ménage (état des lieux, printemps, déménagement)
+						Grand ménage (état des lieux, ménage de printemps, déménagement)
 					</li>
 					<li className={styles.li}>Nettoyage de vitres</li>
 					<li className={styles.li}>
-						Ménage pour professionnels (bureaux, locaux)
+						Jardinage (tonte, débroussaillage, entretien des massifs)
+					</li>
+					<li className={styles.li}>
+						Petit bricolage (montage de meubles, installation d’étagères, changement d’ampoules, etc.)
+					</li>
+					<li className={styles.li}>
+						Assistance informatique à domicile (ordinateur, tablette, smartphone, etc.)
+					</li>
+					<li className={styles.li}>
+						Assistance administrative à domicile (courriers, démarches en ligne, archivage, etc.)
 					</li>
 				</ul>
 				<Link href="/services" className={styles.cta}>

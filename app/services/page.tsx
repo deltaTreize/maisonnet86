@@ -88,13 +88,49 @@ export default function Services() {
 						></Image>
 					</li>
 					<li className={styles.li}>
-						<p className={styles.title}>Ménage pour professionnels (bureaux, locaux)</p>
+						<p className={styles.title}>Jardinage</p>
             <p className={styles.description}>
-              Besoin d’un ménage professionnel pour votre bureau ou vos locaux ? Je peux vous proposer un service de nettoyage complet et efficace.
+              Besoin d’aide pour entretenir votre jardin ? Je peux vous proposer un service de tonte, débroussaillage, désherbage manuel, nettoage de terrasse, etc...
             </p>
 						<Image
-							src="/pictures/pro.webp"
-							alt="Ménage pour professionnels"
+							src="/pictures/jardinage.webp"
+							alt="Jardinage"
+							width={300}
+							height={200}
+						></Image>
+					</li>
+					<li className={styles.li}>
+						<p className={styles.title}>Bricolage</p>
+            <p className={styles.description}>
+              Besoin d’aide pour vos petits travaux de bricolage ? Je peux vous proposer un service de montage de meubles, installation d’étagères, changement d’ampoules, etc...
+            </p>
+						<Image
+							src="/pictures/brico.webp"
+							alt="Bricolage"
+							width={300}
+							height={200}
+						></Image>
+					</li>
+					<li className={styles.li}>
+						<p className={styles.title}>Assistance informatique</p>
+            <p className={styles.description}>
+              Pour toutes vos démarches informatiques, je peux vous aider à configurer votre ordinateur, tablette ou smartphone, installer des logiciels, résoudre des problèmes techniques, etc...
+            </p>
+						<Image
+							src="/pictures/informatique.webp"
+							alt="Assistance informatique"
+							width={300}
+							height={200}
+						></Image>
+					</li>
+					<li className={styles.li}>
+						<p className={styles.title}>Assistance administrative</p>
+            <p className={styles.description}>
+              Besoin d’aide pour vos démarches administratives ? Je peux vous aider à gérer vos courriers, effectuer des démarches en ligne, archiver vos documents, etc...
+            </p>
+						<Image
+							src="/pictures/admin.webp"
+							alt="Assistance administrative"
 							width={300}
 							height={200}
 						></Image>
